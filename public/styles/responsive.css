@@ -1,0 +1,50 @@
+@media (max-width: 1270.98px) { 
+    .text-content  h2{
+        font-size: 2.7rem !important; 
+    }
+
+    
+}
+
+@media (max-width:570px) {
+    .our-professionals--title h2{
+        font-size: 1.7rem;
+    }
+
+    .services--title h2{
+        font-size: 1.7rem !important;
+    }
+
+    .caroulsel-photos--title h2{
+        font-size: 1.7rem;
+    }
+
+    .about-title h2{
+        font-size: 1.7rem !important;
+    }
+
+    .about-area{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .logo-container{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:550px){
+    .gradient-area 
+    {
+        background-image: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.8),rgba(0,0,0,0.7), rgba(0,0,0,0.3)) !important;
+
+    }
+}
+
+@media (max-width:576px){
+    .gradient-area{
+        padding-left: 1rem !important;
+    }
+}

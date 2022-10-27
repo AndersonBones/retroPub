@@ -1,0 +1,483 @@
+:root{
+    --blue:#0954a0;
+    --blueHover:#09427a;
+    --gray:rgb(165, 165, 165);
+    --dark:#0e0e0e;
+    --red:#eb242b;
+    --img:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/ff/61/25/getlstd-property-photo.jpg?w=1200&h=-1&s=1)
+}
+
+body{
+    background-color: var(--dark) ;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: var(--dark);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--red), var(--blue), rgba(56,2,155,0)) 1;
+
+}
+.logo-container h1{
+    font-size: 1.2rem;
+    font-family: 'Chivo';
+    color: white !important;
+}
+
+
+.navbar a{
+    text-decoration: none;
+}
+.navbar-nav{
+    gap: 1rem;
+}
+.navbar-nav > a{
+    color: var(--gray);
+    letter-spacing: .2rem;
+    text-decoration: none !important;
+    padding: .5rem;
+    position: relative;
+    transition: ease .4s;
+    z-index: 1;
+}
+
+.navbar-nav > a::after{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:2px;
+    background-color: var(--red);
+    display:block;
+    content:'';
+   
+    transition: width .3s ease-in-out;
+}   
+
+.navbar-nav> a:hover::after{
+    width: 100%;
+}
+
+.navbar-nav > a:hover{
+    color: var(--blue) !important;
+}
+
+.slider-area{
+    position: relative;
+    background-image: var(--img);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 40%;
+   
+    width: 100%;
+    height: 500px !important;
+    
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--red), var(--blue), rgba(56,2,155,0)) 1;
+    
+}
+
+
+.slider-area > .gradient-area{
+       
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.9), rgba(0,0,0,0), rgba(0,0,0,0));
+
+
+}
+
+.gradient-area h1{
+    font-size: 2rem;
+    font-family: 'Chivo';
+    letter-spacing: 5px;
+    
+}
+
+h1 .first, h1 .last{
+    font-size: 3.6rem !important;
+}
+h1 .first{
+    color: var(--red);
+}
+ h1 .last{
+    color: var(--blue);
+}
+h1 > a{
+    margin-top: .9rem;
+    letter-spacing: 2px !important;
+    color: white !important;
+    padding: 5px;
+    background-color: var(--blue) !important;
+    text-shadow: none;
+    transition: background-color .3s ease;
+}
+
+h1 a:hover{
+    background-color: var(--blueHover) !important;
+}
+
+
+.about-area{
+    margin-top: 6rem;
+    gap: 1.8rem;
+    
+
+}
+
+.about-img, .about-content{
+    height: 500px;
+}
+.about-img{
+   
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.979) 0px 5px 15px;
+}
+
+.about-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+.about-img:hover img{
+    transform: scale(1.06) !important;
+}
+
+.about-content{
+    
+    
+    height: 100%;
+   
+}
+
+.about-content p{
+    color: var(--gray);
+}
+
+.text-content{
+    color: var(--gray);
+}
+
+
+.about-content h2{
+    font-family: 'Chivo';
+  
+    font-size: 3rem;
+    display: inline-block;
+  
+    color: white !important; 
+    border-bottom: 3px solid var(--blue);
+}
+
+.about-content p{
+    font-size: 1.2rem !important;
+}
+
+.about-title{
+    gap: 1rem;
+}
+
+.about-title img{
+    width: 3.5rem;
+}
+
+.about-content--hour img{
+    width: 3.5rem;
+    object-fit: cover;
+}
+
+.about-content--hour h2{
+    font-size: 1.5rem;
+    font-family: "Chivo";
+    
+    border-bottom: 3px solid var(--red);
+    color: white !important;
+}
+
+.about-content--hour p{
+    font-size: 1rem !important;
+}
+
+.watch-container{
+
+    gap: 1rem !important;
+}
+
+
+.services{
+    margin-top: 6rem;
+    
+    
+    background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-size: cover;
+
+    object-fit: cover;
+    
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--red), var(--blue), rgba(56,2,155,0)) 1;
+}
+
+.services > .content{
+    
+
+    backdrop-filter: blur(4px);
+    backdrop-filter: brightness(50% );
+}
+
+.text-content  h2{
+    font-size: 3rem;
+    font-family: "Chivo";
+    display: inline-block !important;
+    border-bottom: 3px solid var(--blue);
+    color: white !important;
+}
+
+.services--title{
+    gap: 1rem;
+}
+
+
+.content img{
+    width: 4rem;
+}
+.services .services--title h2{
+    font-size: 3rem;
+    border-bottom: 3px solid var(--blue);
+}
+
+.cards{
+    gap: 1.5rem;
+}
+
+.cards > .card{
+    position: relative;
+    background-color: var(--dark);
+    opacity: 0.91;
+    overflow: hidden;
+}
+
+.card::after{
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    content: '';    
+    transition: all .3s ease;
+}
+
+.card:hover::after{
+    width: 100%;
+}
+
+.cards > .card img{
+    width: 5rem;
+}
+
+.card-body {
+    color: var(--gray);
+}
+
+.card-body p{
+    color: var(--gray);
+}
+
+ .accordion-item{
+    font-family: 'Chivo';
+    background-color: var(--dark) !important;
+    opacity: 0.91;
+    border: none !important;
+}
+.accordion-header button{
+    font-size: 1.3rem;
+    box-shadow: none !important;
+    color: white !important;
+    background-color:var(--blue) ;
+    border: none !important;
+}
+
+.accordion-collapse{
+    background-color:var(--red)!important;
+}
+
+.accordion-body{
+    gap: 1.4rem;
+    color: var(--gray);
+}
+.accordion-body .single-items{
+    display: flex;
+    justify-content: space-between;
+}
+.single-items strong > span:first-child{
+    color: white !important;
+    font-size: 1rem;
+    
+}   
+.single-items strong > span:last-child {
+    color: var(--red) !important;
+}
+.accordion-button::after{
+    filter: brightness(0%) invert(100%);
+}
+
+
+.carousel-photos{
+    width: 100%;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--red), var(--blue), rgba(56,2,155,0)) 1;
+}
+.caroulsel-photos--title{
+    gap: 1rem;
+
+}
+.caroulsel-photos--title img{
+    width: 3.5rem;
+}
+.caroulsel-photos--title h2{
+    font-size: 3.5rem;
+    color: white !important;
+    text-align: center;
+    border-bottom: 3px solid var(--red);
+}
+.owl-carousel{
+    box-shadow: rgba(0, 0, 0, 0.979) 0px 5px 15px;
+   
+}
+
+
+.owl-item img{
+    
+    object-fit: cover;
+    transition: all .3s ease-in;
+}
+.owl-item:hover img{
+    transform: scale(1.05);
+}
+
+
+.our-professionals{
+    width: 100%;
+}
+
+
+.our-professionals img{
+    width: 3.7rem;
+}
+
+.our-professionals--title h2{
+    color: white !important;
+    border-bottom: 3px solid var(--red);
+    font-size: 2.5rem;
+}
+
+.card-professionals{
+    box-shadow: rgba(0, 0, 0, 0.979) 0px 5px 15px;
+    width: 16rem;
+    overflow: hidden;
+}
+.card-professionals-body{
+    background-color: var(--blue);
+}
+.card-professionals img{
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+.card-professionals:hover img{
+    transform: scale(1.05);
+}
+.our-professionals--title{
+    gap: 1rem;
+}
+
+.card-professionals img{
+    width: 17rem !important;
+}
+
+footer{
+    background-color: rgb(8, 8, 8);
+    border-top: 2px solid transparent;
+
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--red), var(--blue), rgba(56,2,155,0)) 1;
+}
+
+footer .card{
+    
+    flex-grow: 0 0 auto;
+    border: 3px solid transparent;
+    background-color: transparent !important;
+}
+
+footer .card .card-body > a{
+    border: none;
+    transition: all .3s ease-in-out;
+    background-color:var(--blue) ;
+}
+
+footer .card a:hover{
+    background-color: var(--blueHover);
+}
+footer .card::after{
+    width: 0;
+    height: 0;
+}
+
+
+footer .card-body--title i{
+    color: var(--blue);
+    font-size: 3.5rem;
+}
+
+footer .card-body--title img{
+    width: 3.7rem;
+    
+}
+
+.social-medias {
+    gap: 1.4rem;
+}
+
+.social-medias a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    
+    font-size: 1.7rem;
+    color: white;
+}
+
+.social-medias a, .social-medias a > i{
+    transition: .3s ease-in-out;
+}
+
+.social-medias a:hover{
+    background-color: var(--blueHover);
+}
+.social-medias a:hover i{
+    transform: scaleX(-1);
+}
+/* 
+.transbox{
+
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(30%);
+} */
