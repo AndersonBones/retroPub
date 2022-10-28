@@ -305,12 +305,12 @@ h1 a:hover{
     font-size: 1.3rem;
     box-shadow: none !important;
     color: white !important;
-    background-color:var(--blue) ;
+    background-color:var(--blue) !important;
     border: none !important;
 }
 
 .accordion-collapse{
-    background-color:var(--red)!important;
+    background-color:var(--dark)!important;
 }
 
 .accordion-body{

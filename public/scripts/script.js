@@ -1,4 +1,4 @@
-document.querySelector('.accordion-button').style.backgroundColor = 'var(--blue)'
+
 
 window.addEventListener('scroll',()=>{
     

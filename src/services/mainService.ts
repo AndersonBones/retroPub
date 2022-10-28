@@ -1,5 +1,6 @@
 
 import fs from 'fs'
+import * as retroPub from '../models/retroPub'
 
 export const readFiles = async(diretorio:string)=> {
 
@@ -8,4 +9,5 @@ export const readFiles = async(diretorio:string)=> {
     
     return filesList;
 }
+
 
