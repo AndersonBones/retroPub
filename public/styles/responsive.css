@@ -7,6 +7,9 @@
 }
 
 @media (max-width:570px) {
+    .text-content h2 {
+        font-size: 1.5rem !important;
+    }
     .our-professionals--title h2{
         font-size: 1.5rem !important;
     }
