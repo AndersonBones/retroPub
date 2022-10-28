@@ -5,7 +5,7 @@ import path from 'path'
 
 export const Main = async (req:Request, res:Response) => {
     
-    let directory = path.join(root.path, './public/images/photos');
+    let directory = path.join('./public/images/photos');
     let filesList = await readFiles(directory);
    
     
