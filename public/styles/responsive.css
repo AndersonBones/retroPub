@@ -1,4 +1,4 @@
-@media (max-width: 1270.98px) { 
+@media (min-width:570px) and (max-width: 1270.98px) { 
     .text-content  h2{
         font-size: 2.7rem !important; 
     }
@@ -7,6 +7,13 @@
 }
 
 @media (max-width:570px) {
+    .gradient-area h1{
+        font-size: 1.3rem;
+    }
+    h1 .last, h1 .first{
+        font-size: 2rem !important;
+   
+    }
     .text-content h2 {
         font-size: 1.5rem !important;
     }

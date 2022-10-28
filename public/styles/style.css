@@ -175,7 +175,7 @@ h1 a:hover{
     display: inline-block;
   
     color: white !important; 
-    border-bottom: 3px solid var(--blue);
+    border-bottom: 3px solid var(--red);
 }
 
 .about-content p{
