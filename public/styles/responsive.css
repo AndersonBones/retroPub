@@ -8,15 +8,15 @@
 
 @media (max-width:570px) {
     .our-professionals--title h2{
-        font-size: 1.7rem;
+        font-size: 1.5rem !important;
     }
 
     .services--title h2{
-        font-size: 1.7rem !important;
+        font-size: 1.5rem !important;
     }
 
     .caroulsel-photos--title h2{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .about-title h2{
