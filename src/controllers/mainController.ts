@@ -1,13 +1,12 @@
 import { Request, Response } from "express"
-import { readFiles } from "../services/mainService"
-import root from 'app-root-path'
-import path from 'path'
+import { readFiles, prices, employees } from "../services/mainService"
 
 export const Main = async (req:Request, res:Response) => {
     
-    let directory = path.join('./public/images/photos');
+    let directory = './public/images/photos';
     let filesList = await readFiles(directory);
-   
+    let Employees  = employees();
+    let Prices = prices();
     
-    res.render('main', {filesList})
+    res.render('main', {filesList, Employees, Prices})
 }

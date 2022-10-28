@@ -11,3 +11,10 @@ export const readFiles = async(diretorio:string)=> {
 }
 
 
+export const employees = () =>{
+    return retroPub.employees;
+}
+
+export const prices = ()=>{
+    return retroPub.prices;
+}

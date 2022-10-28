@@ -1,9 +1,10 @@
+
 export const employees = [
     {name:'Jhon', photo:'p1.webp'}, 
     {name:'Jhon', photo:'p2.png'}, 
     {name:'Jhon', photo:'p3.png'}, 
     {name:'Jhon', photo:'p4.png'}
-]
+] 
 
 export const prices = [
     {name:'CORTE DE CABELO DEGRADE NA NAVALHA', price:'40,00'},

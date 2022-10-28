@@ -446,6 +446,11 @@ footer .card-body--title img{
     
 }
 
+.card-body span{
+    color: var(--blue) !important;
+    font-weight: 600;
+}
+
 .social-medias {
     gap: 1.4rem;
 }
