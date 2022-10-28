@@ -31,11 +31,14 @@ $('.owl-carousel').owlCarousel({
     touchDrag:true,
     autoplay:true,
     responsive:{
+        700:{
+            items:5
+        },
         600:{
-            items:4     
+            items:3 
         },
         400:{
-            items:3
+            items:2
         }
     }
 })

@@ -64,13 +64,17 @@ header{
     color: var(--blue) !important;
 }
 
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
 .slider-area{
     position: relative;
     background-image: var(--img);
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 10% 40%;
+    background-position: 20% 40% ;
    
     width: 100%;
     height: 500px !important;
@@ -167,16 +171,11 @@ h1 a:hover{
     color: var(--gray);
 }
 
-
-.about-content h2{
-    font-family: 'Chivo';
-  
-    font-size: 3rem;
-    display: inline-block;
-  
-    color: white !important; 
-    border-bottom: 3px solid var(--red);
+.font-size{
+    font-size: 2.5rem !important;
 }
+
+
 
 .about-content p{
     font-size: 1.2rem !important;
@@ -195,8 +194,8 @@ h1 a:hover{
     object-fit: cover;
 }
 
-.watch-content h2{
-    font-size: 1.5rem;
+.watch-container h2{
+    font-size: 1.5rem !important;
     font-family: "Chivo";
     
     border-bottom: 3px solid var(--red);
@@ -347,7 +346,7 @@ h1 a:hover{
     width: 3.5rem;
 }
 .caroulsel-photos--title h2{
-    font-size: 3.5rem;
+    
     color: white !important;
     text-align: center;
     border-bottom: 3px solid var(--red);
@@ -380,7 +379,7 @@ h1 a:hover{
 .our-professionals--title h2{
     color: white !important;
     border-bottom: 3px solid var(--red);
-    font-size: 2.5rem;
+    
 }
 
 .card-professionals{
@@ -413,35 +412,34 @@ footer{
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(0.25turn, var(--red), var(--blue), rgba(56,2,155,0)) 1;
 }
-
-footer .card{
+.footer-content .card{
     
     flex-grow: 0 0 auto;
     border: 3px solid transparent;
     background-color: transparent !important;
 }
 
-footer .card .card-body > a{
+.footer-content .card .card-body > a{
     border: none;
     transition: all .3s ease-in-out;
     background-color:var(--blue) ;
 }
 
-footer .card a:hover{
+.footer-content .card a:hover{
     background-color: var(--blueHover);
 }
-footer .card::after{
+.footer-content .card::after{
     width: 0;
     height: 0;
 }
 
 
-footer .card-body--title i{
+.footer-content .card-body--title i{
     color: var(--blue);
     font-size: 3.5rem;
 }
 
-footer .card-body--title img{
+.footer-content .card-body--title img{
     width: 3.7rem;
     
 }
@@ -479,10 +477,25 @@ footer .card-body--title img{
 .social-medias a:hover i{
     transform: scaleX(-1);
 }
-/* 
-.transbox{
 
-    width: 100%;
-    height: 100%;
-    backdrop-filter: brightness(30%);
-} */
+
+
+.error-message{
+    height: 100vh;
+
+}
+
+.error-message .header i{
+    font-size: 9rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+   
+
+}
+
+.error-message .header h1{
+    font-size: 7rem;
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+}

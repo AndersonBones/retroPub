@@ -23,14 +23,14 @@
     <body>
         <header class="animate__animated animate__faster ">
             
-            <nav class="navbar navbar-expand-lg navbar-light ps-3 pe-3 ">
+            <nav class="navbar navbar-expand-md navbar-light ps-3 pe-3 ">
                 
                 <a href="/" class="logo-container d-flex flex-column align-items-center justify-content-center ">
                     <img src="/images/icons/logo.png" width=30px" alt="">
                     <h1 class="m-auto ">RETRO PUB</h1>
                 </a>
 
-                <button class="navbar-toggler bg-dark border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   
                   <i class="fa fa-bars text-white"></i>
                 </button>
@@ -57,18 +57,18 @@
            
         </section>
 
-        <section id="about" class="about-area d-flex justify-content-center   flex-column flex-lg-row align-items-center ">
+        <section id="about" class="w-100 about-area d-flex justify-content-center flex-row align-items-center ">
 
-            <div class="col-sm-9 col-11 col-md-8 col-lg-6 col-xl-4  about-img rounded-1 overflow-hidden">
+            <div class="col-sm-9  col-md-5 col-lg-6 col-xl-4  about-img rounded-1 overflow-hidden">
                 <img src="https://i.pinimg.com/originals/96/19/a4/9619a4fffa3cb80b13188102175dfba3.jpg" alt="">
             </div>
 
             <article class="col-sm-10 col-md-6 col-lg-5 col-xl-4  about-content d-flex flex-column  justify-content-around align-items-center ">
                 
-                <div class="text-content ">
-                    <figure class="about-title mb-3 d-flex align-items-center justify-content-center">
+                <div class="text-content">
+                    <figure class="about-title  mb-3 d-flex align-items-center justify-content-center">
                         <img class="float-end" src="/images/icons/company.png" alt="">
-                        <h2 class="text-white m-0 ">QUEM SOMOS</h2>
+                        <h2 class="text-white m-0 font-size">QUEM SOMOS</h2>
                 
                     </figure>
 
@@ -82,8 +82,8 @@
                 </div>
                 
 
-                <div class="about-content--hour d-flex align-items-start justify-content-center flex-column">
-                    <div class="watch-container mb-2 d-flex align-items-center">
+                <div class="about-content--hour  d-flex align-items-start p-0 justify-content-center flex-column">
+                    <div class="watch-container mb-2 d-flex align-items-center justify-content-start">
                         <img class="img-fluid" src="/images/icons/relogio.png" alt="">
                         <h2>Horário de funcionamento</h2>
                     </div>
@@ -100,7 +100,7 @@
             <div class="content  pt-4 pb-4 d-flex align-items-center justify-content-center flex-column">
                 <div class="services--title w-100 mb-5 justify-content-center d-flex align-items-center">
                     <img src="/images/icons/serviços.png" alt="">
-                    <h2 class=" text-light ">SERVIÇOS</h2>
+                    <h2 class=" text-light font-size">SERVIÇOS</h2>
                 </div>
                 
 
@@ -150,34 +150,14 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body d-flex flex-column">
-                                <div class="single-items d-flex justify-content-between">
-                                    <span>CORTE DE CABELO DEGRADE NA NAVALHA</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
-                                <div class="single-items">
-                                    <span>CORTE DE CABELO DEGRADE NA MAQUINA</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
-                                <div class="single-items">
-                                    <span>CORTE DE CABELO SOCIAL</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
-                                <div class="single-items">
-                                    <span>TRATAMENTO PARA BARBA</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
-                                <div class="single-items">
-                                    <span>SOBRANCELHA</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
-                                <div class="single-items">
-                                    <span>PINTURA DE CABELO</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
-                                <div class="single-items">
-                                    <span>SELAGEM DE CABELO</span>
-                                    <strong class="d-flex"><span>R$</span><span>40,00</span></strong>
-                                </div>
+
+                                <% for(item of Prices){%>
+                                    <div class="single-items d-flex justify-content-between">
+                                        <span><%= item.name %> </span>
+                                        <strong class="d-flex"><span>R$</span><span><%= item.price %> </span></strong>
+                                    </div>
+                                <%}%> 
+                                
                             </div>
                         </div>
                     </div>
@@ -189,7 +169,7 @@
         <section class="carousel-photos">
             <div class="caroulsel-photos--title w-100 d-flex pt-5 pb-5 justify-content-center align-items-center">
                 <img src="/images/icons/man.png" alt="">
-                <h2>ESTILOS</h2>
+                <h2 class="font-size">ESTILOS</h2>
             </div>
             
             <div class="owl-carousel owl-theme">
@@ -205,88 +185,79 @@
         <section class="our-professionals mt-5 mb-5 pt-2 pb-3">
             <div class="our-professionals--title d-flex align-items-center justify-content-center">
                 <img src="/images/icons/businessman.png" alt="">
-                <h2>NOSSOS PROFISSIONAIS</h2>
+                <h2 class="font-size">NOSSOS PROFISSIONAIS</h2>
             </div>
 
             <div class="cards mt-5  flex-wrap d-flex justify-content-center">
-                <div class="card card-professionals d-flex flex-column align-items-center justify-content-between" >
-                    <img class="card-img-top " src="/images/professionals/p1.webp" alt="Card image cap">
-                    <article class="card-body card-professionals-body w-100 text-center">
-                      <h5 class="card-title text-light">Jhon</h5>
-                      <p class="card-text mt-3 ">Some quick example text to</p>
-                    </article>
-                </div>
 
-                <div class="card card-professionals d-flex flex-column align-items-center justify-content-center">
-                    <img class="card-img-top " src="/images/professionals/p2.png" alt="Card image cap">
-                    <article class="card-body card-professionals-body w-100 text-center">
-                      <h5 class="card-title text-light">Luka</h5>
-                      <p class="card-text mt-3 ">Some quick example text to </p>
-                    </article>
-                </div>
+                <% for(item of Employees){%>
+                    <div class="card card-professionals d-flex flex-column align-items-center justify-content-between" >
+                        <img class="card-img-top " src="/images/professionals/<%=item.photo%> " alt="Card image cap">
+                        <article class="card-body card-professionals-body w-100 text-center">
+                          <h5 class="card-title text-light"><%= item.name %> </h5>
+                          <p class="card-text mt-3 ">Some quick example text to</p>
+                        </article>
+                    </div>
+                <%}%> 
 
-                <div class="card card-professionals d-flex flex-column align-items-center justify-content-center">
-                    <img class="card-img-top " src="/images/professionals/p3.png" alt="Card image cap">
-                    <article class="card-body card-professionals-body w-100 text-center">
-                      <h5 class="card-title text-light">Roben</h5>
-                      <p class="card-text mt-3 ">Some quick example text to </p>
-                    </article>
-                </div>
+                
 
-                <div class="card card-professionals d-flex flex-column align-items-center justify-content-center">
-                    <img class="card-img-top" src="/images/professionals/p4.png" alt="Card image cap">
-                    <article class="card-body card-professionals-body w-100 text-center">
-                      <h5 class="card-title text-light">Laura</h5>
-                      <p class="card-text mt-3 ">Some quick example text to </p>
-                    </article>
-                </div>
+                
 
             </div>
 
         </section>
 
-        <footer id="contact" class="flex-wrap d-flex justify-content-around">
-            <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-                <article class="card-body text-center">
-                    <div class="card-body--title">
-                        <i class="bi bi-telephone"></i>
-                        <h5 class="card-title text-light">CONTATO</h5>
-                    </div>
-                    
-                    <p class="card-text">Para mais informações, <br> entre em contato conosco pelo telefone abaixo.</p>
-                    <span id="phone text-light">913-473-7000</span>
-                </article>
-            </div>
+        <footer id="contact" class="d-flex flex-column">
 
-            <div class="card d-flex col-xl-3 col-lg-4 col-md-5 col-sm-6">
-                
-                <article class="card-body text-center">
-                    <div class="card-body--title">
-                        <img src="/images/icons/logo.png" alt="">
-                        <h5 class="card-title text-light">RETRO PUB</h5>
-                    </div>
+            <div class="footer-content flex-wrap justify-content-around d-flex">
+                <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex flex-column justify-content-center align-items-center">
+                    <article class="card-body text-center">
+                        <div class="card-body--title">
+                            <i class="bi bi-telephone"></i>
+                            <h5 class="card-title text-light">CONTATO</h5>
+                        </div>
+                        
+                        <p class="card-text">Para mais informações, <br> entre em contato conosco pelo telefone abaixo.</p>
+                        <span id="phone text-light">913-473-7000</span>
+                    </article>
+                </div>
+    
+                <div class="card d-flex col-xl-3 col-lg-4 col-md-5 col-sm-6">
                     
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry</p>
-                    <div class="social-medias d-flex justify-content-center">
-                        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i> </a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex">
-                <article class="card-body text-center">
-                    <div class="card-body--title">
-                        <i class="bi bi-geo-alt"></i>
-                        <h5 class="card-title text-light">ENDEREÇO</h5>
-                    </div>
-                    
-                    <p class="card-text">Av. Rio Grande do Sul, 555e - Centro <br>Lucas do Rio Verde - MT <br> 78455-000</p>
-                    <a href="https://goo.gl/maps/mXYbD1mR2989L8A3A" target="_blank" class="btn btn-primary">Localização</a>
-                </article>
+                    <article class="card-body text-center">
+                        <div class="card-body--title">
+                            <img src="/images/icons/logo.png" alt="">
+                            <h5 class="card-title text-light">RETRO PUB</h5>
+                        </div>
+                        
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry</p>
+                        <div class="social-medias d-flex justify-content-center">
+                            <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i> </a>
+                        </div>
+                    </article>
+                </div>
+    
+                <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex">
+                    <article class="card-body text-center">
+                        <div class="card-body--title">
+                            <i class="bi bi-geo-alt"></i>
+                            <h5 class="card-title text-light">ENDEREÇO</h5>
+                        </div>
+                        
+                        <p class="card-text">Av. Rio Grande do Sul, 555e - Centro <br>Lucas do Rio Verde - MT <br> 78455-000</p>
+                        <a href="https://goo.gl/maps/mXYbD1mR2989L8A3A" target="_blank" class="btn btn-primary">Localização</a>
+                    </article>
+                </div>
             </div>
             
-           <!-- <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>-->
+            
+            <div class="copyright m-auto text-center mt-4">
+                <div class="text-white"> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+                <p class="text-white">Copyright © 2022 - Retro Pub Barbearia</p>
+            </div>
+            
         </footer> 
         
 

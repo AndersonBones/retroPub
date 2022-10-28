@@ -6,30 +6,56 @@
     
 }
 
+
+@media (max-width:900px) {
+    .about-area{
+        flex-direction: column !important;
+    }
+
+    .about-area  .about-title{
+        justify-content: flex-start !important;
+    }
+
+    .about-content--hour {
+        justify-content: flex-start !important;
+    }
+
+}
+
+@media (min-width: 767.98px) and (max-width: 900px){
+    .about-img{
+        width: 70% !important;
+    }
+  
+}
+
 @media (max-width:570px) {
+    .about-content--hour{
+        width: 100% !important;
+    }
     .gradient-area h1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     h1 .last, h1 .first{
         font-size: 2.6rem !important;
    
     }
     .text-content h2 {
-        font-size: 1.5rem !important;
+        font-size: 1.7rem !important;
     }
     .our-professionals--title h2{
-        font-size: 1.5rem !important;
+        font-size: 1.7rem !important;
     }
     .watch-container h2{
-        font-size: 1.2rem !important;
+        font-size: 1.3rem !important;
     }
 
     .services--title h2{
-        font-size: 1.5rem !important;
+        font-size: 1.7rem !important;
     }
 
     .caroulsel-photos--title h2{
-        font-size: 1.5rem;
+        font-size: 1.7rem !important;
     }
 
     .about-title h2{
@@ -48,16 +74,23 @@
     }
 }
 
-@media (max-width:550px){
-    .gradient-area 
-    {
-        background-image: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.8),rgba(0,0,0,0.7), rgba(0,0,0,0.3)) !important;
-
+@media (max-width: 768px) { 
+    .navbar-nav {
+        display: inline-flex !important;
+        gap: 0rem !important;
     }
+
+    
 }
 
 @media (max-width:576px){
     .gradient-area{
         padding-left: 1rem !important;
+    }
+
+    .gradient-area 
+    {
+        background-image: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.8),rgba(0,0,0,0.7), rgba(0,0,0,0.3)) !important;
+
     }
 }
