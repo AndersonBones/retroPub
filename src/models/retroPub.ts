@@ -1,13 +1,15 @@
-interface data {name:String, photo:String}
+interface emp {name:String, photo:String}
 
-export const employess: Array<data> = [
+const employess: Array<emp> = [
     {name:'Jhon', photo:'p1.webp'}, 
     {name:'Laurence', photo:'p2.png'}, 
     {name:'Maicon', photo:'p3.png'}, 
     {name:'Laura', photo:'p4.png'}
 ] 
 
-export const prices = [
+interface pri {name:String, price:String};
+
+const prices: Array<pri> = [
     {name:'CORTE DE CABELO DEGRADE NA NAVALHA', price:'40,00'},
     {name:'CORTE DE CABELO DEGRADE NA MAQUINA', price:'40,00'},
     {name:'CORTE DE CABELO SOCIAL', price:'40,00'},
@@ -18,4 +20,4 @@ export const prices = [
 ]
 
 
-
+export default {prices, employess}
