@@ -16,3 +16,7 @@ export const employees = () =>{
 export const prices = ()=>{
     return retroPub.prices;
 }
+
+export const services = ()=>{
+    return retroPub.services;
+}

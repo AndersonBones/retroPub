@@ -1,3 +1,17 @@
+interface serv {name:String, photo:string, desc:String}
+
+const services: Array<serv> = [
+    {name:'Corte de Cabelo', photo:'maquina-de-cortar-cabelo.png', 
+    desc:"Some quick example text to build on the card title and make up the bulk of the card's content"},
+    {name:'Cuidado com a Barba', photo:'barba.png', 
+    desc:"Some quick example text to build on the card title and make up the bulk of the card's content"},
+    {name:'Pintura e Selagem do Cabelo', photo:'cabelo-masculino.png', 
+    desc:"Some quick example text to build on the card title and make up the bulk of the card's content"},
+    {name:'Cuidado com a Sobrancelha', photo:'sobrancelhas.png', 
+    desc:"Some quick example text to build on the card title and make up the bulk of the card's content"}
+
+]
+
 interface emp {name:String, photo:String}
 
 const employess: Array<emp> = [
@@ -20,4 +34,4 @@ const prices: Array<pri> = [
 ]
 
 
-export default {prices, employess}
+export default {services, prices, employess}

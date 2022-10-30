@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { readFiles, prices, employees } from "../services/mainService"
+import { readFiles, prices, employees, services } from "../services/mainService"
 
 export const Main = async (req:Request, res:Response) => {
     
@@ -7,6 +7,7 @@ export const Main = async (req:Request, res:Response) => {
     let filesList = await readFiles(directory);
     let Employees  = employees();
     let Prices = prices();
-    
-    res.render('main', {filesList, Employees, Prices})
+    let Services = services();
+
+    res.render('main', {filesList, Services, Employees, Prices})
 }

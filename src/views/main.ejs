@@ -107,38 +107,17 @@
                 
 
                 <div class="cards d-flex flex-wrap justify-content-center">
-                    <div class="card d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
-                        <img class="card-img-top mt-2" src="/images/icons/maquina-de-cortar-cabelo.png" alt="Card image cap">
-                        <article class="card-body text-center">
-                          <h5 class="card-title text-light">Corte de Cabelo</h5>
-                          <p class="card-text mt-3 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </article>
-                    </div>
 
-                    <div class="card d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
-                        <img class="card-img-top mt-2" src="/images/icons/barba.png" alt="Card image cap">
-                        <article class="card-body text-center">
-                          <h5 class="card-title text-light">Cuidado com a Barba</h5>
-                          <p class="card-text mt-3 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </article>
-                    </div>
+                    <% for(item of Services){%>
+                        <div class="card d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
+                            <img class="card-img-top mt-2" src="/images/icons/<%=item.photo%> " alt="Card image cap">
+                            <article class="card-body text-center">
+                              <h5 class="card-title text-light"><% item.name %> </h5>
+                              <p class="card-text mt-3 "><%=item.desc%> </p>
+                            </article>
+                        </div>
+                    <%}%> 
 
-                    <div class="card d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
-                        <img class="card-img-top mt-2" src="/images/icons/cabelo-masculino.png" alt="Card image cap">
-                        <article class="card-body text-center">
-                          <h5 class="card-title text-light">Pintura e Selagem do Cabelo</h5>
-                          <p class="card-text mt-3 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </article>
-                    </div>
-
-                    <div class="card d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
-                        <img class="card-img-top mt-2" src="/images/icons/sobrancelhas.png" alt="Card image cap">
-                        <article class="card-body text-center">
-                          <h5 class="card-title text-light">Cuidado com a Sobrancelha</h5>
-                          <p class="card-text mt-3 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </article>
-                    </div>
-    
                 </div>
 
 
