@@ -1,6 +1,6 @@
 # retro Pub
 
-Retro Pub Landing Page 
+Retro Pub | Página de Barbearia
 
 ### Requisitos Globais
 `npm install -g ts-node typescript nodemon`
